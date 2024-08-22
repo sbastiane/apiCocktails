@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cocktail Management</h1>
+
+    <section>
+        <h2>All Cocktails</h2>
+        <button onclick="getAllCocktails()">Fetch All Cocktails</button>
+        <div id="cocktails-list"></div>
+    </section>
+
+    <section>
+        <h2>Create Cocktail</h2>
+        <form id="create-cocktail-form">
+            <label>Name: <input type="text" name="nombre"></label><br>
+            <label>Price: <input type="number" name="precio" step="0.01"></label><br>
+            <label>Description: <input type="text" name="descrip"></label><br>
+            <label>Size: <input type="number" name="tamaño" step="0.01"></label><br>
+            <label>Type: <input type="text" name="tipo"></label><br>
+            <label>Alcohol Content: <input type="number" name="gradodealcohol" step="0.01"></label><br>
+            <label>Country of Origin: <input type="text" name="paisorigen"></label><br>
+            <label>Expiration Date: <input type="date" name="fechavencimiento"></label><br>
+            <label>Preparation Time: <input type="number" name="tiempopreparacion"></label><br>
+            <label>Image: <input type="file" name="imagen"></label><br>
+            <button type="submit">Create</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Delete Cocktail</h2>
+        <form id="delete-cocktail-form">
+            <label>ID: <input type="number" name="id"></label><br>
+            <button type="submit">Delete</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Calculate Order</h2>
+        <form id="calculate-order-form">
+            <label>ID: <input type="number" name="id"></label><br>
+            <label>Quantity: <input type="number" name="cantidad"></label><br>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="order-result"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
